@@ -1,0 +1,57 @@
+$color_1: #fff;
+$color_2: #111;
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .textBox {
+    position: relative;
+    max-width: 600px;
+    h2 {
+      color: $color_1;
+      font-size: 4em;
+      line-height: 1.5em;
+      font-weight: 900;
+      text-transform: uppercase;
+      span {
+        font-size: 2em;
+      }
+    }
+    p {
+      color: $color_1;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 20px;
+      background: #fff;
+      color: $color_2;
+      border-radius: 40px;
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  .imgBox {
+    max-width: 560px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+    img {
+      max-width: 560px;
+      border-radius: 0.5em;
+    }
+  }
+}
+
+@include media-breakpoint-between(xs, lg){
+  .content {
+    display: block;
+    width: 100%;
+  }
+}
+  
