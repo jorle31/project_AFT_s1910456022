@@ -1,0 +1,31 @@
+//mixin for modal buttons
+@mixin modalButtons($border: none, $buttonColor: #fff, $buttonBackgroundColor: $orange){
+    position: relative;
+    margin-left: 0.625rem;
+    padding: 0.625rem 1.25rem;
+    border: $border;
+    background-color: $buttonBackgroundColor;
+    border-radius: 0.25rem;
+    color: $buttonColor;
+    font-size: 0.87rem;
+    font-weight: 300;
+    overflow: hidden;
+    z-index: 1;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255,255,255,0.2);
+    transition: width $base-duration;
+    z-index: 0;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}
