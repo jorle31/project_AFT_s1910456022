@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Advanced Frontend Techniques - s1910456022</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="../build/assets/css/main.min.css">
+    <link rel="icon" type="image/x-icon" href="../build/assets/images/logo.png">
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal cookieModal" data-modal="cookies">
+        <article class="content-wrapper">
+            <header class="modal-header">
+                <h2>We have sooooo many cookies. Please accept.</h2>
+            </header>
+            <div class="content">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.</p>
+            </div>
+            <footer class="modal-footer">
+                <button class="action cookieModal" data-modal-trigger="cookies" data-modal-value="accepted">Accept</button>
+                <button class="action cookieModal" data-modal-trigger="cookies" data-modal-value="denied">Decline</button>
+            </footer>
+        </article>
+    </div>
+    <!-- Modal -->
+
+    <!-- Modal -->
+    <div class="modal" data-modal="trigger-1">
+        <article class="content-wrapper">
+            <button class="close"></button>
+            <header class="modal-header">
+                <h2>Sorry, we are all out of stock.</h2>
+            </header>
+            <div class="content">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.</p>
+            </div>
+            <footer class="modal-footer">
+                <button class="action" data-modal-trigger="trigger-1">Für Newsletter anmelden</button>
+                <button class="action" data-modal-trigger="trigger-1">Abbrechen</button>
+            </footer>
+        </article>
+    </div>
+    <!-- Modal -->
+
+    <!-- Main -->
+    <section class="sec">
+        <header>
+          <a href="#"><img src="../build/assets/images/logo.png" class="logo" alt="Nike Swoosh Orange"></a>
+          <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">What's new</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>What's new<br><span>in Nike town</span></h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                    vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="trigger" data-modal-trigger="trigger-1">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="../build/assets/images/vaporfly.png" class="nike">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="../build/assets/images/vaporfly.png" class="thumbnail" data-bg="#0062be"></li>
+            <li><img src="../build/assets/images/nike_zoom_tempo_next%25.png" class="thumbnail" data-bg="#e60c2c"></li>
+            <li><img src="../build/assets/images/nike_air_zoom_aplhafly_next%25.png" class="thumbnail" data-bg="#1e1e1e"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="../build/assets/images/facebook.png"></a></li>
+            <li><a href="#"><img src="../build/assets/images/twitter.png"></a></li>
+            <li><a href="#"><img src="../build/assets/images/instagram.png"></a></li>
+        </ul>
+    </section>
+    <!-- Main -->
+    <script src="../build/assets/js/main.min.js"></script>
+</body>
+</html>
