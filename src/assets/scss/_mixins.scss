@@ -22,7 +22,6 @@
     transition: width $base-duration;
     z-index: 0;
   }
-
   &:hover {
     &:before {
       width: 100%;

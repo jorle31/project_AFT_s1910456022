@@ -17,3 +17,17 @@
     }
   }
 }
+@media (max-width: $lg){
+  .sci {
+    position: absolute;
+    top: 90%;
+    right: 0;
+    width: 50px;
+    background: rgba(0,0,0,0.2);
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+}

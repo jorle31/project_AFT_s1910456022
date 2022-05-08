@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         },
         concat: {
             dist: {
-                src: ['src/assets/js/modal.js', 'src/assets/js/animations.js', 'src/assets/js/cookies.js'],
+                src: ['src/assets/js/modal.js', 'src/assets/js/animations.js', 'src/assets/js/cookies.js', 'src/assets/js/navigation.js'],
                 dest: 'build/assets/js/main.js',
             },
         },

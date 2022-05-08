@@ -14,7 +14,6 @@ function modalEvent(button) {
         modal.classList.toggle('open');
     });
 }
-
 document.querySelectorAll(".action").forEach(button => {
     button.onclick = function() {
         const trigger = button.getAttribute('data-modal-trigger');

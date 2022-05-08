@@ -1,34 +1,5 @@
 $base-duration: 0.25s;
-
-// Colors
-$primary: slategray;
-$white: whitesmoke;
-$orange: #ff6600;
-
-html {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
-  color: #444;
-  background-color: $primary;
-}
-
-button {
-  cursor: pointer;
-}
-
-body {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-}
-
 .pdfobject-container { height: 30rem; border: 1rem solid rgba(0,0,0,.1); }
-
 .trigger {
   margin: 0 0.75rem;
   padding: 0.625rem 1.25rem;
@@ -38,16 +9,13 @@ body {
   transition: all $base-duration cubic-bezier(.25,.8,.25,1);
   font-size: 0.875rem;
   font-weight: 300;
-
   i {
     margin-right: 0.3125rem;
   }
-
   &:hover {
     box-shadow: 0 0.875rem 1.75rem rgba(0,0,0,0.25), 0 0.625rem 0.625rem rgba(0,0,0,0.22);
   }
 }
-
 .modal {
   position: fixed;
   top: 0;
@@ -60,19 +28,16 @@ body {
   overflow: hidden;
   transition: background-color $base-duration ease;
   z-index: 9999;
-
   &.open {
     position: fixed;
     width: 100%;
     height: 100vh;
     background-color: rgba(0,0,0,0.5);
     transition: background-color $base-duration;
-
     > .content-wrapper {
       transform: scale(1.0);
     }
   }
-
   .content-wrapper {
     position: relative;
     display: flex;
@@ -88,7 +53,6 @@ body {
     transform: scale(0.0);
     transition: transform $base-duration;
     transition-delay: 0.15s;
-
     .close {
       position: absolute;
       top: 0.5rem;
@@ -102,7 +66,6 @@ body {
       background-color: transparent;
       font-size: 1.5rem;
       transition: $base-duration linear;
-
       &:before, &:after {
         position: absolute;
         content: '';
@@ -110,24 +73,19 @@ body {
         height: 0.125rem;
         background-color: black;
       }
-
       &:before {
         transform: rotate(-45deg);
       }
-
       &:after {
         transform: rotate(45deg);
       }
-
       &:hover {
         transform: rotate(360deg);
-
         &:before, &:after {
           background-color: $orange;
         }
       }
     }
-
     .modal-header {
       position: relative;
       display: flex;
@@ -137,23 +95,19 @@ body {
       width: 100%;
       margin: 0;
       padding: 0 0 1.25rem;
-
       h2 {
         font-size: 1.5rem;
         font-weight: bold;
       }
     }
-
     .content {
       position: relative;
       display: flex;
-
       p {
         font-size: 0.875rem;
         line-height: 1.75;
       }
     }
-
     .modal-footer {
       position: relative;
       display: flex;
@@ -162,14 +116,17 @@ body {
       width: 100%;
       margin: 0;
       padding: 1.875rem 0 0;
-
       & > button:first-child {
         @include modalButtons($border: none, $buttonColor: $white, $buttonBackgroundColor: $orange);
       }
-
       & > button:last-child {
         @include modalButtons($border: none, $buttonColor: #708090, $buttonBackgroundColor: $white);
       }
     }
+  }
+}
+@media (max-width: $sm){
+  .modal .content-wrapper {
+    width: 100%;
   }
 }

@@ -1,3 +1,5 @@
+//Import variables.scss
+@import "variables";
 //Import bootstrap.scss
 @import "bootstrap";
 //Import layout.scss
@@ -5,12 +7,12 @@
 //Import mixins.scss
 @import "mixins";
 //Import navigation.scss
-@import "navigation";
+@import "components/navigation";
 //Import content.scss
-@import "content";
+@import "components/content";
 //Import thumbnails.scss
-@import "thumbnails";
+@import "components/thumbnails";
 //Import socials.scss
-@import "socials";
+@import "components/socials";
 //Import modal.scss
-@import "modal";
+@import "components/modal";

@@ -1,0 +1,41 @@
+.contentText {
+  color: $white;
+}
+.contentHeader {
+  @extend .contentText;
+  font-size: 4em;
+  line-height: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  span {
+    font-size: 2em;
+  }
+}
+.trigger {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #fff;
+  color: $black;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px   ;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.imageBox{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: $lg) {
+  .contentHeader span{
+    font-size: 1.5em;
+  }
+  .imageBox{
+    margin-top: 2em;
+  }
+}
+
+
+  

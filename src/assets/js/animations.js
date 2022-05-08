@@ -4,7 +4,7 @@ document.querySelectorAll(".thumbnail").forEach(shoe => {
         //change image
         document.querySelector(".nike").src = this.getAttribute('src');
         //change background
-        const sec = document.querySelector('.sec');
-        sec.style.background = this.getAttribute('data-bg');
+        const container = document.querySelector('.container-fluid');
+        container.style.background = this.getAttribute('data-bg');
     };
 });

@@ -1,25 +1,13 @@
-//Breakpoints
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
-
 *{
   font-family: 'Poppins', sans-serif;
 }
-
-section{
-  position: relative;
+.container-fluid{
   width: 100%;
   min-height:100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 2em 4em 1em 4em;
   background: #0062be;
   transition: 0.5s;
+}
+.section{
+  margin-bottom: 4em;
 }

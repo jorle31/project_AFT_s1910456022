@@ -1,0 +1,16 @@
+.thumbnails > .row{
+  justify-content: center;
+  .thumb{
+    display:flex;
+    justify-content: space-between;
+    max-width: 20em;
+    .thumbnail{
+      max-width: 80px;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        transform: translateY(-15px);
+      }
+    }
+  }
+}
